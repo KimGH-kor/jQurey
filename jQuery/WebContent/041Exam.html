@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <script src="js/jquery-3.4.1.min.js"></script>
+ 
+ <style>
+ 	.backcolor1{
+ 		background-color : orange;
+ 		color:blue;
+ 	}
+ 	.backcolor2{
+ 		background-color : yellow;
+ 		color : black;
+ 	}
+ </style>
+ 
+ <script>
+ 	$(document).ready(function(){
+ 		$('#title').hover(function(){
+ 			$(this).removeClass("backcolor2");
+ 			$(this).addClass('backcolor1');
+ 		}, function(){
+ 			$(this).removeClass("backcolor1");
+ 		});
+ 		$('#btn2').click(function(){
+ 			$('#title').addClass('backcolor2');
+ 		});
+ 	});
+ </script>
+</head>
+<body>
+	<h1 id="title">Hello jQuery</h1>
+	<button id="btn2">색상바꾸기</button>
+</body>
+</html>

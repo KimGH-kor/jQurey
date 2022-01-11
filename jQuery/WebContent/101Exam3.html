@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON</title>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   var emp = {
+      "name"       : "홍길동",
+      "age"        : 30,
+      "tel"        : "1111-2222",
+      "address"    : "대구시"
+   };
+   
+   var msg = "";
+   msg += "이름 : " + emp.name       + "<br>"
+      +  "나이 : " + emp.age          + "<br>"
+      +  "전화 : " + emp['tel']       + "<br>"
+      +  "주소 : " + emp["address"]    + "<br>"
+   
+   $('#result').html(msg);
+   
+   var key = "";
+   
+   
+   $(document).mousedown(function(){
+      key = $('#txt').val();
+      $('#show').text(emp[key]);
+   });
+   
+});
+</script>
+</head>
+<body>
+   <h2>JSON 표기법</h2>
+   <span>출력항목 : </span><input type="text" id="txt">
+   <br><br>
+   <div id="result"></div><br>
+   <div id="show"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+	function process1(){
+		var obj = document.getElementById("txt").value;
+		document.getElementById("view1").innerText = obj;
+	}
+	function process2(){
+		var obj = document.getElementById("txt").value;
+		document.getElementById("view2").innerHTML = obj;
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="txt" size="50" name="text"/>
+	<input type="button" value="출력1" onclick="process1()"/>
+	<input type="button" value="출력2" onclick="process2()"/>
+	
+	<div id="view1"></div>
+	<div id="view2"></div>
+</body>
+</html>

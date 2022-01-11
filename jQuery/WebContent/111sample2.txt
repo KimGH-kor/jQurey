@@ -1,0 +1,23 @@
+<h2>*권장 도서*</h2>
+<table border = '1' width = "300px">
+	<tr>
+		<th>과목</th>
+		<th>저자</th>
+		<th>가격</th>
+	</tr>
+	<tr>
+		<th>jQuery</th>
+		<th>주니어</th>
+		<th>15,000</th>
+	</tr>
+	<tr>
+		<th>HTML5</th>
+		<th>토미</th>
+		<th>25,000</th>
+	</tr>
+	<tr>
+		<th>CSS3</th>
+		<th>제이슨</th>
+		<th>20,000</th>
+	</tr>
+</table>

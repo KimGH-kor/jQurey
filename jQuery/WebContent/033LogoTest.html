@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <script src="js/jquery-3.4.1.min.js"></script>
+ <script>
+ 	$(document).ready(function(){
+ 		$('#btn1').click(function(){
+ 			$('#img').show();
+ 		});
+ 		$('#btn2').click(function(){
+ 			$('#img').hide();
+ 		});
+ 	});
+ 	
+ 	function firstHide(){
+ 		$('#img').hide();
+ 	}
+ </script>
+</head>
+<body>
+<button id="btn1">로고보이기</button>
+<button id="btn2">로고숨기기</button>
+
+<div>
+<img id="img" src="image/shoes.jpg" style="display:none">
+</div>
+</body>
+</html>

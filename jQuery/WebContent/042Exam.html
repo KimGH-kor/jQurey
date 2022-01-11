@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <script src="js/jquery-3.4.1.min.js"></script>
+ 
+ <style>
+ 	.backcolor{
+ 		background-color : yellow;
+ 	}
+ </style>
+ 
+ <script>
+ 	$(document).ready(function(){
+ 		$('.btn1').hover(function(){
+ 			$(this).addClass('backcolor');
+ 		}, function(){
+ 			$(this).removeClass('backcolor');
+ 		})
+ 	})
+ </script>
+ 
+ 
+</head>
+<body>
+	<button class="btn1">음악감상</button>
+	<button class="btn1">영화보기</button>
+	<button class="btn1">사진보기</button>
+	<button class="btn1">종료하기</button>
+</body>
+</html>

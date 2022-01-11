@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('img').mouseover(function(){
+			$(this).attr('src','image/cat2.png');
+			$(this).css("width",'500');
+			$(this).css("height",'500');
+		})
+		.mouseout(function(){
+			$(this).attr('src','image/cat1.png');
+			$(this).css("width",'500');
+			$(this).css("height",'500');
+		});
+		/*
+		$('img').mouseover(function(){
+			$(this).attr('src','image/cat2.png');
+		})
+		$('img').mouseout(function(){
+			$(this).attr('src','image/cat1.png');
+		});
+		*/
+	})
+</script>
+</head>
+<body>
+	<img src="image/cat1.png">
+</body>
+</html>

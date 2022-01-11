@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#show").click(function() {
+			var str = $('form').serialize();
+			$("#result").text(str);
+		});
+	});
+</script>
+</head>
+<body>
+	<form>
+		이름 : <input type="text" name="name"><br>
+		취미 : <input	type="checkbox" name="hobby" value="climb">등산 
+			 <input	type="checkbox" name="hobby" value="climb">낚시 
+			 <input	type="checkbox" name="hobby" value="climb">여행<br> 
+		<input type="button" id="show" value="등록">
+	</form>
+	<br>
+	<br>
+
+	<div id="result"></div>
+</body>
+</html>

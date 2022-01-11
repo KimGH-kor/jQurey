@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		//포커싱 됐을때(선명해짐)
+		$("input").focus(function(){
+			$(this).css("background-color", "orange");
+		});
+		//포커싱이 안됐을때(흐려짐)
+		$("input").blur(function(){
+			$(this).css("background-color", "white");
+		});
+	});
+</script>
+</head>
+<body>
+	이름 : <input type="text" id="text" placeholder="이름을 입력하세요">
+</body>
+</html>

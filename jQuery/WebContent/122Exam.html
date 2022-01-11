@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$.getScript("js/122demo.js");
+			
+			$("#submit").click(function(){
+				var data1=$('#x').val();
+				var data2=$('#y').val();
+				
+				var rs = addMethod(data1, data2);
+				$("#result").html(rs);
+			});
+		});
+	</script>
+</head>
+<body>
+	<form>
+		<label>x : </label><input type="text" name="x" id="x">
+		<label>y : </label><input type="text" name="y" id="y">
+		<input type="button" id="submit" value="더하기">
+	</form><br><br>
+	
+	<div id = "result"></div>
+</body>
+</html>
