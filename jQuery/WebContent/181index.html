@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-3.4.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/181css.css">
+<style>
+.main_container {
+	position: absolute;
+	top: 150px;
+	left: 160px;
+	height: 200px;
+	width: 690px;
+	padding-left: 10px;
+}
+</style>
+<script>
+	$(document).ready(function() {
+		$('#intro').click(function() {
+			$('.main_container').load("181intro.html");
+		});
+		$('#login').click(function() {
+			$('.main_container').load("181login.html");
+		});
+		$('#gallery').click(function() {
+			$('.main_container').load("181gallery.html");
+		});
+
+	});
+</script>
+</head>
+<body>
+	<h1>나만의 다락방</h1>
+	<div id="main_lnb">
+		<ul>
+			<li><a id="intro" href="#" class="mylink">다락방소개</a></li>
+			<li><a id="gallery" href="#" class="mylink">갤러리</a></li>
+			<li><a href="#" class="mylink">영화보기</a></li>
+			<li><a href="#" class="mylink">메모장</a></li>
+			<li><a href="#" class="mylink">찾아오시는길</a></li>
+			<li><a id="login" href="#" class="mylink">로그인</a></li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<div class="main_container"></div>
+</body>
+</html>

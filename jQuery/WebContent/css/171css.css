@@ -1,0 +1,45 @@
+h1{
+	width: 100%;
+	text-align: center;
+	color:white;
+	text-shadow: 1px 1px 2px #000000, 0 0 25px blue, 0 0 5px darkblue;
+}
+a{
+	text-decoration:none;
+}
+img:hover {
+	opacity: .5;
+}
+#main_lnb{
+	margin: 0 auto;
+	width: 70%;
+	background-color: black;
+}
+#main_lnb > ul{
+	list-style: none;
+	height: 50px;
+	line-height: 45px;
+	padding: 0;
+}
+
+#main_lnb > ul > li{
+	text-decoration: none;
+	color : white;
+	font-weight: bold;
+	float: left;
+	text-align: center;
+	width: 16.66%;
+	height : 100%;
+}
+#main_lnb > ul > li:hover{
+	background-color: #868686;
+}
+a.mylink:link{
+	color:white;
+}
+a.mylink:visited{
+	color:white;
+}
+p{
+	display:inline-block;
+}

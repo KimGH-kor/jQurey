@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="css/512jquery-ui.css">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+	$(function() {
+		$("#menu").menu();
+		$(".test").click(function(){
+			alert("Car Hifi를 클릭하셨습니다.");
+		})
+	});
+
+</script>
+<style>
+.ui-menu {
+	width: 150px;
+}
+</style>
+</head>
+<body>
+	<ul id="menu">
+		<li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+		<li><div>도서Books</div></li>
+		<li><div>옷Clothing</div></li>
+		<li><div>전자제품<br>Electronics</div>
+			<ul>
+				<li class="ui-state-disabled"><div>Home Entertainment</div></li>
+				<li class="test"><div>Car Hifi</div></li>
+				<li><div>Utilities</div></li>
+			</ul></li>
+		<li><div>Movies</div></li>
+		<li><div>음악Music</div>
+			<ul>
+				<li><div>Rock</div>
+					<ul>
+						<li><div>Alternative</div>
+						<li>
+						<li><div>Classic</div>
+						<li>
+					</ul></li>
+				<li><div>Jazz</div>
+					<ul>
+						<li><div>Freejazz</div>
+						<li>
+						<li><div>Big Band</div>
+						<li>
+						<li><div>Modern</div>
+						<li>
+					</ul></li>
+				<li><div>Pop</div></li>
+			</ul></li>
+		<li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+	</ul>
+</body>
+</html>

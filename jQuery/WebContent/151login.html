@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-3.4.1.min.js"></script>
+<style>
+	span{
+		font-size : 15px;
+		font-weight : bold;
+		color:orange;
+	}
+	#log1, #log2{
+		border : 1px dotted gray;
+		padding : 20px;
+		width : 350px;
+	}
+</style>
+<script>
+	$(document).ready(function() {
+		$("#log1").show();
+		$("#log2").hide();
+		
+		$("#loginb").click(function(){
+			var sid = $("#id").val();
+			var spw = $("#pw").val();
+			
+			if(sid=="" || spw==""){
+				$("#fail_result").text("아이디와 비밀번호를 입력해 주세요").css("color","black");
+			}else{
+				$('#log1').hide();
+				$('#log2').show();
+				$("#ok_result").html(sid+"님이 로그인 하셨습니다").css("color", "blue");
+			}//end if
+		});
+	});
+</script>
+</head>
+<body>
+	<div id ="log1">
+		<span>계정과 패스워드를 입력해 주세요</span>
+		<form id ="loginf">
+			<table>
+				<tr>
+					<td>계정</td>
+					<td width="150px"><input type="text" id="id" name="id"/></td>
+					<td><input type="button" id="loginb" name="loginb" value="로그인"/></td>
+				</tr>
+				<tr>
+					<td>패스워드</td>
+					<td><input type="password" id="pw" name="pw"></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3"><div id="fail_result"></div></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	
+	<div id = "log2">
+		<p id="ok_result"></p>
+		<a href="151gallery.html">갤러리로 이동</a>
+	</div>
+</body>
+</html>
